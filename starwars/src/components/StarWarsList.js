@@ -1,6 +1,6 @@
 import React from 'react';
 
-const StarWarsList = props => {  //compoent to create list for each box, accepts props
+const StarWarsList = props => {  //compoent to create list for each box, accepts props from App.js JSON data
     return(
         <div className='boxLayout'>  {/*holds the outer container of boxes*/}
         

@@ -1,10 +1,10 @@
 import React from 'react';
 import StarWarsList from './StarWarsList';
 
-const StarWars = props => {
+const StarWars = props => {   {/*StarWars accepts props from StarWarsList*/}
     return(
         <div>
-            <StarWarsList chars={props.charsList}/>  {/*component to*/}
+            <StarWarsList chars={props.charsList}/> 
         </div>
     )
 }

@@ -22,7 +22,7 @@ class App extends Component {
 
     fetch(URL)  //gets URL data from link above
       .then(res => {
-        return res.json();  // returns the JSON data from link
+        return res.json();  // returns the JSON data from link (response composed of stringified version of the data)
       })
       .then(data => {
         this.setState({ starwarsChars: data.results });  // sets state and creates property
@@ -38,12 +38,9 @@ class App extends Component {
     
     return (
       
-      <div className="App">
-        {/* {console.log(this.state.starwarsChars)} */}
-        
+      <div className="App">        
         <h1 className="Header">React Wars</h1>  {/*title above all boxes*/}
-        
-        <StarWars charsList={this.state.starwarsChars}/>  {/*calls StarWars component andcreates char output*/}
+        <StarWars charsList={this.state.starwarsChars}/>  {/*calls StarWars component and creates char output from StarWarsChars array, setting it to charsList*/}
       </div>
     );
   }
