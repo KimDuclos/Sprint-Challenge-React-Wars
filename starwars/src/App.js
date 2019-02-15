@@ -25,7 +25,7 @@ class App extends Component {
         return res.json();  // returns the JSON data from link
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });  // creates property
+        this.setState({ starwarsChars: data.results });  // sets state and creates property
       })
       .catch(err => {
         throw new Error(err);
