@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import StarWars from './components/StarWars'
+import StarWarsList from './components/StarWarsList';
 
 class App extends Component {
   constructor() {
@@ -40,7 +40,7 @@ class App extends Component {
       
       <div className="App">        
         <h1 className="Header">React Wars</h1>  {/*title above all boxes*/}
-        <StarWars charsList={this.state.starwarsChars}/>  {/*calls StarWars component and creates char output from StarWarsChars array, setting it to charsList*/}
+        <StarWarsList chars={this.state.starwarsChars}/>  {/*calls StarWars component and creates char output from StarWarsChars array, setting it to charsList*/}
       </div>
     );
   }
