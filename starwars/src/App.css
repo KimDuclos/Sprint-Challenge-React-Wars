@@ -1,8 +1,31 @@
+
 .App {
   text-align: center;
 }
 .Header {
-  color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
+  color: black;
+  text-shadow: 1px 1px 5px white;
 }
 /* write your parent styles in here for your App.js */
+
+.charBoxes {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  border: solid 1p;
+  margin: 6px;
+  background: rgb(128, 99, 62);
+  padding: 0 0 1% 0;
+  box-shadow: 1px 1px 5px white;
+  color: white;
+}
+
+.boxLayout {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 0 0 10%;
+}
